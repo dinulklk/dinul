@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>[Nama Lengkap Anda] | Portofolio Riset Sains Kefarmasian & Farmakologi Jaringan</title>
+    <meta name="description" content="Portofolio akademik dan progres penelitian skripsi [Nama Lengkap Anda]. Fokus riset pada analisis network pharmacology senyawa Costunolide, Hellenia speciosa, ekstrak daun sirih, serta kalkulasi sediaan farmasetika steril dan manajemen farmasi klinik.">
+    <meta name="keywords" content="[Nama Lengkap Anda], Skripsi Farmasi, Network Pharmacology Indonesia, Costunolide, Hellenia speciosa, Daun Sirih, Formulasi Sediaan Steril, Perhitungan Osmolaritas, Metode SOAP Klinis, GPP Rumah Sakit">
+    <meta name="author" content="[Nama Lengkap Anda]">
+
+    <meta property="og:title" content="Portofolio Ilmiah Farmasi - [Nama Lengkap Anda]">
+    <meta property="og:description" content="Integrasi metode network pharmacology multi-target dan analisis parameter formulasi sediaan steril.">
+    <meta property="og:type" content="profile">
+    
+    <style>
+        /* CSS RESET & VARIABEL WARNA */
+        :root {
+            --primary-color: #1e3a8a; /* Deep Slate Blue */
+            --secondary-color: #0d9488; /* Teal Accent */
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* STRUKTUR NAVIGASI */
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: 'Arial', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* HERO HEDER SECTION */
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: #ffffff;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-style: italic;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: 'Arial', sans-serif;
+            font-weight: 300;
+        }
+
+        /* WADAH UTAMA KONTEN */
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 3rem auto;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-family: 'Arial', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            color: var(--text-light);
+        }
+
+        /* STRUKTUR LIST & AKORDION RISET */
+        .research-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .research-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .research-item h3 {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* TABEL DATA PARAMETER PENELITIAN */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        /* KONTAK & FOOTER */
+        .contact-info {
+            background-color: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-family: 'Arial', sans-serif;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-family: 'Arial', sans-serif;
+            border-top: 1px solid var(--border-color);
+            margin-top: 5rem;
+        }
+
+        /* RESPONSIVITAS MOBILE */
+        @media (max-width: 768px) {
+            .container { width: 95%; margin: 1.5rem auto; }
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1.05rem; }
+            section { padding: 1.5rem; }
+            nav a { display: block; margin: 0.5rem 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#profil">Profil Peneliti</a>
+        <a href="#skripsi">Proposal & Riset</a>
+        <a href="#kompetensi">Matriks Kompetensi</a>
+        <a href="#koresp">Korespondensi</a>
+    </nav>
+
+    <header>
+        <h1>[Nama Lengkap Anda]</h1>
+        <p>Peneliti Bidang Farmasi | Spesialisasi Analisis Jalur Multi-Target & Formulasi Farmasetika Steril</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="profil">
+            <h2>Profil Akademik</h2>
+            <p>Saya adalah seorang akademisi dan peneliti di bidang ilmu kefarmasian yang saat ini berfokus pada pengembangan proposal skripsi dan penelitian integratif. Dedikasi riset saya arahkan pada penjaringan interaksi senyawa aktif tanaman obat dengan sistem biologis kompleks, serta pemastian validitas kalkulasi teknis dalam manufaktur sediaan steril di ranah industri maupun klinis.</p>
+            <p>Melalui pendekatan interdisipliner, saya berupaya menjembatani pemanfaatan komputasi penapisan maya dengan standarisasi praktis kefarmasian guna menghasilkan luaran terapi yang optimal dan berbasis bukti ilmiah kuat (*evidence-based medicine*).</p>
+        </section>
+
+        <section id="skripsi">
+            <h2>Fokus Riset & Proposal Skripsi</h2>
+            
+            <div class="research-item">
+                <h3>1. Pemetaan Sistem Multi-Target Jalur Biologis (Network Pharmacology)</h3>
+                <p>Mengembangkan kerangka interaksi ligan-protein secara komprehensif untuk mengevaluasi mekanisme kerja molekuler dari senyawa aktif bahan alam, khususnya <i>Costunolide</i> dan komponen fitokimia dari ekstrak <i>Hellenia speciosa</i> serta daun sirih (<i>Piper betle</i>). Studi ini bertujuan mengidentifikasi titik tangkap multi-target pada berbagai reseptor yang berperan dalam patofisiologi penyakit sistemik.</p>
+            </div>
+
+            <div class="research-item">
+                <h3>2. Formulasi Farmasetika & Validasi Teknis Sediaan Steril</h3>
+                <p>Melakukan pemodelan kalkulasi tingkat lanjut terhadap parameter fisiko-kimia sediaan parenteral volume besar dan kecil. Fokus metodologi mencakup perhitungan tonisitas dan penyesuaian osmolaritas (mOsm/L) pada formula infus dextrose monohidrat—dengan penerapan faktor kompensasi kelebihan volume (*volume overfill*) sebesar 2% menggunakan *Water for Injection* (WFI)—serta perancangan matematis produksi skala *batch* untuk sediaan vial furosemide.</p>
+            </div>
+
+            <div class="research-item">
+                <h3>3. Tata Kelola Klinis & Regulasi Kefarmasian Rumah Sektor</h3>
+                <p>Penyusunan kerangka telaah kritis terhadap manajemen perbekalan farmasi dan alat kesehatan merujuk pada regulasi Kementerian Kesehatan. Penerapan implementasi pelayanan berbasis *Good Pharmacy Practice* (GPP) diwujudkan melalui simulasi dan analisis rekam medis pasien menggunakan metode integratif SOAP (Subjective, Objective, Assessment, Plan).</p>
+            </div>
+        </section>
+
+        <section id="kompetensi">
+            <h2>Matriks Metodologi & Parameter Riset</h2>
+            <p>Berikut adalah ringkasan parameter teknis dan penguasaan metodologi sediaan yang diterapkan dalam rancangan riset kefarmasian saya:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domain Kompetensi</th>
+                        <th>Parameter Metodologi</th>
+                        <th>Target Aplikasi Klinis & Teknologi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Fitoterapi & Komputasi</strong></td>
+                        <td>Penapisan Maya & Pemetaan Multi-Pathway (Costunolide, Daun Sirih)</td>
+                        <td>Identifikasi target reseptor baru dan mekanisme sinergisme senyawa aktif obat tradisional.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Teknologi Farmasetika</strong></td>
+                        <td>Kalkulasi Osmolaritas & Volume Overfill 2% (WFI)</td>
+                        <td>Rancangan optimasi stabilitas fisik dan tonisitas infus Dextrose serta sediaan parenteral Furosemide.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Farmasi Klinik</strong></td>
+                        <td>Dokumentasi Sistem SOAP & Standar Pelayanan GPP</td>
+                        <td>Evaluasi ketepatan dosis, deteksi interaksi obat, dan peningkatan kualitas tata kelola klinis di rumah sakit.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="koresp">
+            <h2>Korespondensi & Kolaborasi Ilmiah</h2>
+            <p>Saya membuka peluang seluas-luasnya bagi para sejawat apoteker, dosen pembimbing, maupun peneliti lintas disiplin ilmu untuk berdiskusi, memberikan telaah kritis, atau melakukan kolaborasi riset strategis.</p>
+            <div class="contact-info">
+                <p><strong>E-mail Akademik:</strong> [Surel / Email Anda]@institusi.ac.id</p>
+                <p><strong>Laboratorium Afiliasi:</strong> Departemen Farmasetika & Farmakologi, Fakultas Farmasi</p>
+                <p><strong>Alamat Institusi:</strong> [Nama Universitas / Kampus Anda], Indonesia</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 [Nama Lengkap Anda]. Hak Cipta Dilindungi Undang-Undang. | Akademik Portofolio Kefarmasian</p>
+    </footer>
+
+</body>
+</html>
